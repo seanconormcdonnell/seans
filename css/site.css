@@ -52,7 +52,7 @@ H1, h2 {
         .hero .menu ul li:hover {
           cursor: pointer; }
   .hero .content {
-    padding: 200px 0px;
+    padding: 80px 0px;
     text-align: center; }
     @media only screen and (max-width: 690px) {
       .hero .content {
@@ -63,15 +63,21 @@ H1, h2 {
       margin: 0; }
     .hero .content .sub-titles {
       position: relative;
-      margin-top: 6px; }
+      margin-top: 6px;
+      padding: 0; }
       .hero .content .sub-titles li {
         list-style: none;
         position: absolute;
         display: block;
-        right: 25%;
+        text-align: center;
+        width: 100%;
+        left: 0;
         top: 0;
         color: rgba(241, 250, 238, 0);
         font-size: 24px; }
+        @media only screen and (max-width: 690px) {
+          .hero .content .sub-titles li {
+            right: 25%; } }
         .hero .content .sub-titles li.first {
           display: inline;
           animation: fade1 15s; }
@@ -103,70 +109,115 @@ H1, h2 {
           text-decoration: none;
           fill: currentColor; }
 
+@media only screen and (max-width: 690px) {
+  @keyframes fade1 {
+    0% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    15% {
+      color: #f1faee;
+      right: 25%; }
+    25% {
+      color: rgba(241, 250, 238, 0);
+      right: 80%; }
+    26% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    100% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; } }
+  @keyframes fade2 {
+    0% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    20% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    45% {
+      color: #f1faee;
+      right: 25%; }
+    50% {
+      color: rgba(241, 250, 238, 0);
+      right: 80%; }
+    51% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    100% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; } }
+  @keyframes fade3 {
+    0% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    45% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    70% {
+      color: #f1faee;
+      right: 25%; }
+    75% {
+      color: rgba(241, 250, 238, 0);
+      right: 80%; }
+    76% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    100% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; } }
+  @keyframes fade4 {
+    0% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    75% {
+      color: rgba(241, 250, 238, 0);
+      right: 0; }
+    100% {
+      color: #f1faee;
+      right: 25%; } } }
 @keyframes fade1 {
   0% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   15% {
-    color: #f1faee;
-    right: 25%; }
+    color: #f1faee; }
   25% {
-    color: rgba(241, 250, 238, 0);
-    right: 80%; }
+    color: rgba(241, 250, 238, 0); }
   26% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   100% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; } }
+    color: rgba(241, 250, 238, 0); } }
 @keyframes fade2 {
   0% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   20% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   45% {
-    color: #f1faee;
-    right: 25%; }
+    color: #f1faee; }
   50% {
-    color: rgba(241, 250, 238, 0);
-    right: 80%; }
+    color: rgba(241, 250, 238, 0); }
   51% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   100% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; } }
+    color: rgba(241, 250, 238, 0); } }
 @keyframes fade3 {
   0% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   45% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   70% {
-    color: #f1faee;
-    right: 25%; }
+    color: #f1faee; }
   75% {
-    color: rgba(241, 250, 238, 0);
-    right: 80%; }
+    color: rgba(241, 250, 238, 0); }
   76% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   100% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; } }
+    color: rgba(241, 250, 238, 0); } }
 @keyframes fade4 {
   0% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   75% {
-    color: rgba(241, 250, 238, 0);
-    right: 0; }
+    color: rgba(241, 250, 238, 0); }
   100% {
-    color: #f1faee;
-    right: 25%; } }
+    color: #f1faee; } }
 .container {
   padding: 80px 160px;
   text-align: center; }
@@ -178,19 +229,21 @@ H1, h2 {
     line-height: 64px;
     text-align: left;
     color: #3f5973;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 0; }
   .container .underline-svg {
     width: 100%;
     float: left;
     margin-bottom: 24px; }
   .container p {
     color: #2f5973;
-    width: 50%;
+    width: 100%;
     text-align: left;
     line-height: 1.5em;
-    font-size: 24px; }
+    font-size: 18px; }
     @media only screen and (max-width: 690px) {
       .container p {
-        width: 100%; } }
+        width: 100%;
+        font-size: 18px; } }
 
 /*# sourceMappingURL=site.css.map */

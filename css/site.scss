@@ -93,7 +93,7 @@ H1, h2 {
   }
 
   .content{
-    padding: 200px 0px;
+    padding: 80px 0px;
     text-align: center;
       @media #{$mobile} {
           padding: 80px 0px
@@ -108,15 +108,22 @@ H1, h2 {
       .sub-titles{
         position: relative;
         margin-top: 6px;
+        padding: 0;
 
         li{
           list-style: none;
           position:absolute;
           display:block;
-          right: 25%;
+          text-align: center;
+          width: 100%;
+          left: 0;
           top: 0;
           color: rgba(241, 250, 238, 0);
           font-size: 24px;
+
+          @media #{$mobile}{
+            right: 25%;
+          }
 
           &.first{
             display: inline;
@@ -165,38 +172,70 @@ H1, h2 {
 
 }
 
+@media #{$mobile}{
+  @keyframes fade1{
+    0%{color: rgba(241, 250, 238, 0); right: 0;}
+    15%{color: rgba(241, 250, 238, 1); right: 25%;}
+    25%{color: rgba(241, 250, 238, 0); right: 80%;}
+    26%{color: rgba(241, 250, 238, 0); right: 0;}
+    100%{color: rgba(241, 250, 238, 0); right: 0;}
+  }
+
+  @keyframes fade2{
+    0%{color: rgba(241, 250, 238, 0); right: 0;}
+    20%{color: rgba(241, 250, 238, 0); right: 0;}
+    45%{color: rgba(241, 250, 238, 1); right: 25%;}
+    50%{color: rgba(241, 250, 238, 0); right: 80%; }
+    51%{color: rgba(241, 250, 238, 0); right: 0;}
+    100%{color: rgba(241, 250, 238, 0); right: 0;}
+  }
+
+  @keyframes fade3{
+    0%{color: rgba(241, 250, 238, 0); right: 0;}
+    45%{color: rgba(241, 250, 238, 0); right: 0;}
+    70%{color: rgba(241, 250, 238, 1); right: 25%;}
+    75%{color: rgba(241, 250, 238, 0); right: 80%;}
+    76%{color: rgba(241, 250, 238, 0); right: 0;}
+    100%{color: rgba(241, 250, 238, 0); right: 0;}
+  }
+  @keyframes fade4{
+    0%{color: rgba(241, 250, 238, 0); right: 0;}
+    75%{color: rgba(241, 250, 238, 0); right: 0;}
+  //  90%{color: rgba(241, 250, 238, 1); right: 0;}
+    100%{color: rgba(241, 250, 238, 1); right: 25%;}
+  }
+}
+
 @keyframes fade1{
-  0%{color: rgba(241, 250, 238, 0); right: 0;}
-  15%{color: rgba(241, 250, 238, 1); right: 25%;}
-  25%{color: rgba(241, 250, 238, 0); right: 80%;}
-  26%{color: rgba(241, 250, 238, 0); right: 0;}
-  100%{color: rgba(241, 250, 238, 0); right: 0;}
+  0%{color: rgba(241, 250, 238, 0); }
+  15%{color: rgba(241, 250, 238, 1); }
+  25%{color: rgba(241, 250, 238, 0); }
+  26%{color: rgba(241, 250, 238, 0); }
+  100%{color: rgba(241, 250, 238, 0); }
 }
 
 @keyframes fade2{
-  0%{color: rgba(241, 250, 238, 0); right: 0;}
-  20%{color: rgba(241, 250, 238, 0); right: 0;}
-  45%{color: rgba(241, 250, 238, 1); right: 25%;}
-  50%{color: rgba(241, 250, 238, 0); right: 80%; }
-  51%{color: rgba(241, 250, 238, 0); right: 0;}
-  100%{color: rgba(241, 250, 238, 0); right: 0;}
+  0%{color: rgba(241, 250, 238, 0); }
+  20%{color: rgba(241, 250, 238, 0);}
+  45%{color: rgba(241, 250, 238, 1);}
+  50%{color: rgba(241, 250, 238, 0);}
+  51%{color: rgba(241, 250, 238, 0);}
+  100%{color: rgba(241, 250, 238, 0);}
 }
 
 @keyframes fade3{
-  0%{color: rgba(241, 250, 238, 0); right: 0;}
-  45%{color: rgba(241, 250, 238, 0); right: 0;}
-  70%{color: rgba(241, 250, 238, 1); right: 25%;}
-  75%{color: rgba(241, 250, 238, 0); right: 80%;}
-  76%{color: rgba(241, 250, 238, 0); right: 0;}
-  100%{color: rgba(241, 250, 238, 0); right: 0;}
+  0%{color: rgba(241, 250, 238, 0); }
+  45%{color: rgba(241, 250, 238, 0);}
+  70%{color: rgba(241, 250, 238, 1);}
+  75%{color: rgba(241, 250, 238, 0);}
+  76%{color: rgba(241, 250, 238, 0);}
+  100%{color: rgba(241, 250, 238, 0);}
 }
 @keyframes fade4{
-  0%{color: rgba(241, 250, 238, 0); right: 0;}
-  75%{color: rgba(241, 250, 238, 0); right: 0;}
-//  90%{color: rgba(241, 250, 238, 1); right: 0;}
-  100%{color: rgba(241, 250, 238, 1); right: 25%;}
+  0%{color: rgba(241, 250, 238, 0); }
+  75%{color: rgba(241, 250, 238, 0);}
+  100%{color: rgba(241, 250, 238, 1);}
 }
-
 .container{
 
   padding: 80px 160px;
@@ -212,6 +251,7 @@ H1, h2 {
     text-align: left;
     color: $dark-blue;
     margin-bottom: 0;
+    margin-top: 0;
     }
 
     .underline-svg {
@@ -222,13 +262,14 @@ H1, h2 {
 
   p{
     color: #2f5973;
-    width: 50%;
+    width: 100%;
     text-align: left;
     line-height: 1.5em;
-    font-size: 24px;
+    font-size: 18px;
 
     @media #{$mobile}{
       width: 100%;
+      font-size: 18px;
     }
 
   }
