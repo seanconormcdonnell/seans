@@ -3,57 +3,31 @@ body {
   font-family: 'Lato', sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #F1FAEE; }
+  background-color: #4f73bf; }
 
 H1, h2 {
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em; }
 
 .hero {
   display: inline-block;
   position: relative;
   text-align: center;
   width: 100%;
-  background-color: #E63946;
-  color: #F1Faee; }
-  .hero .menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 90; }
-    .hero .menu .hamburger-container {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: auto;
-      text-align: left;
-      padding: 0 40px; }
-      .hero .menu .hamburger-container .hamburger {
-        font-size: 36px;
-        line-height: 36px; }
-        .hero .menu .hamburger-container .hamburger:hover {
-          cursor: pointer; }
-    .hero .menu ul {
-      background-color: #3f5973;
-      color: #f1faee;
-      width: 200px;
-      height: 0px;
-      overflow: hidden;
-      list-style: none;
-      text-align: left;
-      margin: 0;
-      transition: height 300ms; }
-      .hero .menu ul li {
-        font-size: 24px;
-        padding: 0;
-        margin: 0;
-        line-height: 36px; }
-        .hero .menu ul li:first-child {
-          margin-top: 80px; }
-        .hero .menu ul li:hover {
-          cursor: pointer; }
+  background-color: #1e3072;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b4eff4' fill-opacity='0.09'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color: #b4eff4;
+  border-top: 16px solid #08174c;
+  border-bottom: 16px solid #08174c; }
+  @media only screen and (max-width: 690px) {
+    .hero {
+      border-top: 8px solid #08174c;
+      border-bottom: 8px solid #08174c; } }
   .hero .content {
     padding: 80px 0px;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     @media only screen and (max-width: 690px) {
       .hero .content {
         padding: 80px 0px; } }
@@ -61,6 +35,10 @@ H1, h2 {
       font-size: 80px;
       line-height: 96px;
       margin: 0; }
+      @media only screen and (max-width: 690px) {
+        .hero .content h1 {
+          font-size: 52px;
+          line-height: 64px; } }
     .hero .content .sub-titles {
       position: relative;
       margin-top: 6px;
@@ -73,7 +51,7 @@ H1, h2 {
         width: 100%;
         left: 0;
         top: 0;
-        color: rgba(241, 250, 238, 0);
+        color: rgba(180, 239, 244, 0);
         font-size: 24px; }
         @media only screen and (max-width: 690px) {
           .hero .content .sub-titles li {
@@ -86,7 +64,7 @@ H1, h2 {
         .hero .content .sub-titles li.third {
           animation: fade3 15s; }
         .hero .content .sub-titles li.fourth {
-          color: #f1faee;
+          color: #b4eff4;
           animation: fade4 15s; }
     .hero .content .social {
       position: relative;
@@ -105,119 +83,121 @@ H1, h2 {
         text-align: center;
         font-size: 24px; }
         .hero .content .social li a {
-          color: #f1faee;
+          color: #ffe949;
           text-decoration: none;
           fill: currentColor; }
+          .hero .content .social li a:hover {
+            color: #5092ce; }
 
 @media only screen and (max-width: 690px) {
   @keyframes fade1 {
     0% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     15% {
-      color: #f1faee;
+      color: #b4eff4;
       right: 25%; }
     25% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 80%; }
     26% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     100% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; } }
   @keyframes fade2 {
     0% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     20% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     45% {
-      color: #f1faee;
+      color: #b4eff4;
       right: 25%; }
     50% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 80%; }
     51% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     100% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; } }
   @keyframes fade3 {
     0% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     45% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     70% {
-      color: #f1faee;
+      color: #b4eff4;
       right: 25%; }
     75% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 80%; }
     76% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     100% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; } }
   @keyframes fade4 {
     0% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     75% {
-      color: rgba(241, 250, 238, 0);
+      color: rgba(180, 239, 244, 0);
       right: 0; }
     100% {
-      color: #f1faee;
+      color: #b4eff4;
       right: 25%; } } }
 @keyframes fade1 {
   0% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   15% {
-    color: #f1faee; }
+    color: #b4eff4; }
   25% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   26% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   100% {
-    color: rgba(241, 250, 238, 0); } }
+    color: rgba(180, 239, 244, 0); } }
 @keyframes fade2 {
   0% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   20% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   45% {
-    color: #f1faee; }
+    color: #b4eff4; }
   50% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   51% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   100% {
-    color: rgba(241, 250, 238, 0); } }
+    color: rgba(180, 239, 244, 0); } }
 @keyframes fade3 {
   0% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   45% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   70% {
-    color: #f1faee; }
+    color: #b4eff4; }
   75% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   76% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   100% {
-    color: rgba(241, 250, 238, 0); } }
+    color: rgba(180, 239, 244, 0); } }
 @keyframes fade4 {
   0% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   75% {
-    color: rgba(241, 250, 238, 0); }
+    color: rgba(180, 239, 244, 0); }
   100% {
-    color: #f1faee; } }
+    color: #b4eff4; } }
 .container {
   padding: 80px 160px;
   text-align: center; }
@@ -228,15 +208,20 @@ H1, h2 {
     font-size: 48px;
     line-height: 64px;
     text-align: left;
-    color: #3f5973;
+    color: #1e3072;
     margin-bottom: 0;
     margin-top: 0; }
+    @media only screen and (max-width: 690px) {
+      .container h2 {
+        font-size: 36px;
+        line-height: 44px; } }
   .container .underline-svg {
     width: 100%;
     float: left;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    fill: #1e3072; }
   .container p {
-    color: #2f5973;
+    color: #b4eff4;
     width: 100%;
     text-align: left;
     line-height: 1.5em;
